@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaspi Госуслуги Клон</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gosuslugi-screen" class="page active">
+        <div class="fake-btn item-udostoverenie" onclick="openDocument()"></div>
+        
+        <img src="gosuslugi-main.jpg" class="full-screen-img" alt="Экран Госуслуг">
+    </div>
+
+
+    <div id="document-screen" class="page">
+        <div class="fake-btn item-back" onclick="closeDocument()"></div>
+        
+        <img src="my-id-card.jpg" class="full-screen-img" alt="Удостоверение личности">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
