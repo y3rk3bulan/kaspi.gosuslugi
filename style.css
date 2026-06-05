@@ -1,52 +1,20 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Черный фон вокруг, если открывать с ПК */
+    background-color: #ffffff; /* Белый фон, как в приложении */
     display: flex;
     justify-content: center;
-}
-
-/* Настройки для экранов (ограничиваем ширину под мобильный формат) */
-.page {
-    display: none;
-    position: relative;
     width: 100%;
-    max-width: 450px; /* Идеальный размер мобильного экрана */
-    background-color: #ffffff;
 }
 
-.page.active {
-    display: block;
+.document-container {
+    width: 100%;
+    max-width: 450px; /* Ограничение, чтобы на ПК картинка не растягивалась слишком сильно */
+    height: 100vh;
 }
 
-/* Картинки заполняют всю ширину экрана */
 .full-screen-img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* Общий стиль для интерактивных невидимых зон */
-.fake-btn {
-    position: absolute;
-    cursor: pointer;
-    /* Чтобы увидеть, где находятся кнопки при настройке, раскомментируйте строку ниже: */
-    /* background: rgba(255, 0, 0, 0.3); */ 
-}
-
-/* Позиция кнопки "Удостоверение личности" на первом экране */
-.item-udostoverenie {
-    top: 30%;      /* Отступ сверху (примерно где карточка) */
-    left: 5%;      /* Отступ слева */
-    width: 35%;    /* Ширина области клика */
-    height: 13%;   /* Высота области клика */
-    border-radius: 12px;
-}
-
-/* Позиция кнопки "Назад" на втором экране */
-.item-back {
-    top: 5%;
-    left: 3%;
-    width: 15%;
-    height: 6%;
 }
